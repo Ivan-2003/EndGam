@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src = "https://unpkg.com/aos@2.3.1/dist/aos.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <title>LayoutingJquery2</title>
+  </head>
+  <style>
+      .page1{
+          background-image: url(./img/bg1.jpg);
+          background-size: cover;
+          padding: 1rem;
+      }
+
+      #a{
+          padding-left: 70%;
+      }
+
+      .jumbotron{
+          background-color: #000031;
+      }
+
+      #b{
+          padding-left:17%;
+      }
+
+      #g{
+          padding-left: 20%;
+      }
+
+      .page2{
+          background-color: #000031;
+          padding: 3rem;
+          color: white;
+      }
+
+      .page3{
+          padding: 6rem;
+          background-color: #4b0082;
+      }
+
+      .page4{
+          background-image: url(./img/bg3.jpg);
+          background-size: cover;
+      }
+
+      .page6{
+          background-color: #000031;
+          padding: 4rem;
+      }
+
+      #shake:hover {
+            animation: shake 0.5s;
+            animation-iteration-count: infinite;
+      }
+
+      @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(3px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(1px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+      }
+
+      /* .box {
+      width: 40%;
+      height: 200px;
+      background: orange;
+      border-radius: 2px;
+      color: white;
+      text-align: center;
+      }
+
+      .x {
+      margin: 120vh auto 0 auto;
+      }
+
+      .y {
+      margin: 40vh auto 0 auto;
+      } */
+
+  </style>
+  <body>
+
+      <div class="page1">
+          <div class="row" id="a">
+                      <h5 style="color:#a9a9a9;">Follow us:</h5>&emsp;
+                      <i style="color: white; padding: 0.5rem;" class="fa fa-facebook"></i>&emsp;
+                      <i style="color: white;padding: 0.5rem;" class="fa fa-adjust"></i>&emsp;
+                      <i style="color: white;padding: 0.5rem;" class="fa fa-twitter"></i>&emsp;
+                      <i style="color: white;padding: 0.5rem;" class="fa fa-circle"></i>&emsp;
+                      <i style="color: white;padding: 0.5rem;" class="fa fa-behance"></i>
+          </div><br>
+
+            <div class="jumbotron" style="width: 1310px;height: 20px;">
+                  <div class="row">
+                        <img src="./img/logo.png" alt="">
+                        <a class="menu" style="color: white;text-decoration:none;" class="nav-link" href="#" id="b">Home</a>&emsp;&emsp;
+                        <a class="menu" style="color: white;text-decoration:none;" class="nav-link" href="#" id="c">Games</a>&emsp;&emsp;
+                        <a class="menu" style="color: white;text-decoration:none;" class="nav-link" href="#" id="d">Reviews</a>&emsp;&emsp;
+                        <a class="menu" style="color: white;text-decoration:none;" class="nav-link" href="#" id="e">News</a>&emsp;&emsp;
+                        <a class="menu" style="color: white;text-decoration:none;" class="nav-link" href="#" id="f">Contact</a>&emsp;&emsp;
+                        <a class="menu" style="color: white;text-decoration:none;" class="nav-link" href="#" id="g">Login/Register</a>
+                  </div>
+            </div><br><br>
+
+            <div data-aos="fade-up">
+                <h1 style="font-size: 150px;text-align: center;color: white;">Game on!</h1>
+            </div>    
+            <div>
+                <a href=""><img src="./img/solid.png" style="padding-left: 1150px;"></a>
+            </div>
+            <div data-aos="fade-up">
+                <p style="font-size: 20px;color: white; text-align: center;">Fusce erat dui, venenatis et erat in, vulputate dignissim lacus. Donec vitae tempus dolor,</p>
+                <p style="font-size: 20px;color: white; text-align: center;"> sit amet elementum lorem. Ut cursus tempor turpis.</p><br><br>
+                <div class="button" style="padding-left: 570px;" data-aos="flip-right"><button style="width: 200px;height: 70px;"><a>READ MORE &emsp;<img src="./img/doble.png" alt=""></a></button><br><br><br><br><br><br><br></div>
+            </div>          
+      </div>
+
+      <div style="border-top: 2px solid #4b0082"></div>
+
+      <div class="page2">
+          <div class="container">
+              <div class="row">
+                  <div class="col-4">
+                      <h6>11.11.18 /in <a style="color: violet;"><em>Games</em></a></h6><br>
+                      <h5>The best online game is</h5>
+                      <h5>out now!</h5><br>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida....</p><br>
+                      <a><em>READ MORE &emsp;</em><img src="./img/doble.png" alt=""></a>
+                    </div>
+                  <div class="col-4">
+                    <h6>11.11.18 / in <a style="color: violet;"><em>Playstation</em></a></h6><br>
+                    <h5>Top 5 best games in</h5>
+                    <h5>november</h5><br>
+                    <p>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum labore suspendisse ultrices gravida....</p><br>
+                    <a><em>READ MORE &emsp;</em><img src="./img/doble.png" alt=""></a>
+                </div>
+                <div class="col-4">
+                    <h6>11.11.18 / in <a style="color: violet;"><em>Reviews</em></a></h6><br>
+                    <h5>Get this game at a promo</h5>
+                    <h5>price</h5><br>
+                    <p>Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida ncididunt ut labore ....</p><br>
+                    <a><em>READ MORE &emsp;</em><img src="./img/doble.png" alt=""></a>
+                </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="page3">
+        <div class="container">
+          <div class="row">
+              <div class="col-6">
+                <h3 style="color: white"><em>LATEST NEWS</em></h3>
+              </div>
+              <div class="col-6">
+                <h4 style="padding-left: 300px;color: white;"><em>TRENDING</em></h4>
+              </div>
+          </div><br>
+          <div class="row">
+              <div class="col-6">
+                <button style="background-color: blueviolet;color: white;" type="button" class="btn" data-aos="flip-right">Racing</button>
+                <button style="background-color: blueviolet;color: white;" type="button" class="btn" data-aos="flip-right">Shooters</button>
+                <button style="background-color: blueviolet;color: white;" type="button" class="btn" data-aos="flip-right">Strategy</button>
+                <button style="background-color: blueviolet;color: white;" type="button" class="btn" data-aos="flip-right">Online</button>
+              </div>
+              <div class="col-3">
+                  <div id="shake"><img style="padding-left: 250px;" src="./img/1.jpg"></div>
+              </div>
+              <div class="col-3" style="padding-left: 90px;">
+                  <h6 style="font-size: 14px;color: #a9a9a9;">11.11.18 /in <a style="color: violet;"><em>Games</em></a></h6><br>
+                  <h6 style="font-size: 15px;color: white">The best online game is</h6>
+                  <h6 style="font-size: 15px;color: white;">out now!</h6>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-2">
+                  <img style="width: 350px;height: 350px;" src="./img/pg1.jpg" data-aos="zoom-in">
+              </div>
+              <div class="col-6" style="padding-left: 200px;">
+                <h6 style="color: white;">11.11.18 /in <a style="color: violet;"><em>Games</em></a></h6><br>
+                <h5 style="color: white;">The best online game is</h5>
+                <h5 style="color: white;">out now!</h5><br>
+                <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida....</p><br>
+                <a style="color: white;"><em>READ MORE &emsp;</em><img src="./img/doble.png" alt=""></a>
+              </div>
+              <div class="col-1" style="padding-left: 75px;">
+                  <div id="shake"><img src="./img/2.jpg" alt=""></div><br>
+                  <div id="shake"><img src="./img/3.jpg" alt=""></div><br>
+                  <div id="shake"><img src="./img/4.jpg" alt=""></div>
+              </div>
+              <div class="col-3" style="padding-left: 90px;">
+                <div><h6 style="font-size: 14px;color: #a9a9a9;">11.11.18 /in <a style="color: violet;"><em>Games</em></a></h6><br>
+                <h6 style="font-size: 15px;color: white">The best online game is</h6>
+                <h6 style="font-size: 15px;color: white;">out now!</h6></div>
+                <div><h6 style="font-size: 14px;color: #a9a9a9;">11.11.18 /in <a style="color: violet;"><em>Games</em></a></h6><br>
+                <h6 style="font-size: 15px;color: white">The best online game is</h6>
+                <h6 style="font-size: 15px;color: white;">out now!</h6></div>
+                <div><h6 style="font-size: 14px;color: #a9a9a9;">11.11.18 /in <a style="color: violet;"><em>Games</em></a></h6><br>
+                <h6 style="font-size: 15px;color: white">The best online game is</h6>
+                <h6 style="font-size: 15px;color: white;">out now!</h6></div>
+              </div>
+          </div><br><br>
+          <div class="row">
+              <div class="col-4">
+                  <img style="width: 350px;height: 350px;" src="./img/pg2.jpg" data-aos="zoom-in">
+              </div>
+              <div class="col-4">
+                <h6 style="color: white;">11.11.18 /in <a style="color: violet;"><em>Games</em></a></h6><br>
+                <h5 style="color: white;">The best online game is</h5>
+                <h5 style="color: white;">out now!</h5><br>
+                <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida....</p><br>
+                <a style="color: white;"><em>READ MORE &emsp;</em><img src="./img/doble.png" alt=""></a>
+              </div>
+              <div class="col-4" style="padding-left: 70px;">
+                  <div class="card" id="shake" style="width: 275px;height: 350px;background-color: #000031;">
+                    <h4 style="color: white;padding: 2rem;text-align: center;"><em>CATEGORIES</em></h4><br>
+                    <h6><a style="color: violet;padding-left: 65px;"><em>Games</em></a></h6>
+                    <h6><a style="color: violet;padding-left: 65px;"><em>Gaming Tips & Tricks</em></a></h6>
+                    <h6><a style="color: violet;padding-left: 65px;"><em>Online Games</em></a></h6>
+                    <h6><a style="color: violet;padding-left: 65px;"><em>Team Games</em></a></h6>
+                    <h6><a style="color: violet;padding-left: 65px;"><em>Community</em></a></h6>
+                    <h6><a style="color: violet;padding-left: 65px;"><em>Uncategorized</em></a></h6>                  
+                </div>
+              </div>
+          </div><br><br>
+          <div class="row">
+              <div class="col-4">
+                <img style="width: 350px;height: 350px;" src="./img/pg3.jpg" data-aos="zoom-in">
+              </div>
+              <div class="col-4">
+                <h6 style="color: white;">11.11.18 /in <a style="color: violet;"><em>Games</em></a></h6><br>
+                <h5 style="color: white;">The best online game is</h5>
+                <h5 style="color: white;">out now!</h5><br>
+                <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida....</p><br>
+                <a style="color: white;"><em>READ MORE &emsp;</em><img src="./img/doble.png" alt=""></a>
+              </div>
+              <div class="col-4" style="padding-left: 70px;">
+                  <div id="shake"><img style="width: 275px;height: 350px;" src="./img/5.jpg" alt="">
+              </div>
+          </div>
+        </div>
+        </div>
+      </div>  
+
+      <div class="page4">
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <div>
+            <a href="https://www.youtube.com/embed/uFsGy5x_fyQ"><img src="./img/solid.png" style="padding-left: 650px;"></a>
+        </div><br><br><br><br><br><br><br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <div class="card" style="width: 10px;height: 110px;"></div>
+                </div>
+                <div class="col-11" style="padding-right: 300px;" data-aos="fade-left">
+                    <h1 style="color: white;"><em>PROMO VIDEO OF THE GAME</em></h1>
+                    <h6 style="color: #a9a9a9;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h6>
+                </div>
+            </div>
+        </div><br><br><br>    
+      </div>
+
+      <div class="page5">
+              <div class="row">
+                  <div class="col-4">
+                      <img src="./img/bg4.jpg" style="width: 550px;height: 550px;" data-aos="fade-right">
+                  </div>
+                  <div class="col-7" style="padding-left: 150px;" data-aos="fade-left"><br><br>
+                    <h6 style="font-size: 20px;color: #a9a9a9;">11.11.18 /in <a style="color: violet;"><em>Games</em></a></h6><br>
+                    <h1 style="font-size: 50px;">The game you’ve been</h1><br>
+                    <h1 style="font-size: 50px;">waiting for is out now</h1><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquamet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum posuere porttitor justo id pellentesque. Proin id lacus feugiat, posuere erat sit amet, commodo ipsum. Donec pellentesque vestibulum metus...</p><br>
+                    <a style="color: black;"><em>READ MORE &emsp;</em><img src="./img/doble.png" alt=""></a>
+                  </div>
+              </div>
+      </div>
+
+      <div class="page6">
+          <div class="container">
+              <div data-aos="fade-up">
+                  <h1 style="text-align: center;color: white;"><em>SUBSCRIBE TO OUR NEWSLETTER</em></h1>
+              </div><br><br><br><br>
+              <div class="row">
+                  <div class="col-6">
+                      <h6 style="color: white;"><em>Enter Your E-Mail</em> </h6><br>
+                      <div style="border-top: 3px solid #a9a9a9"></div>
+                  </div>
+                  <div class="col-6">
+                    <div id="shake" class="button" style="padding-left: 300px;"><button style="width: 200px;height: 70px;"><a>SUBSCRIBE &emsp;<img src="./img/doble.png" alt=""></a></button></div>
+                  </div>
+              </div><br><br><br><br><br>
+              <div class="row">
+                  <div class="col-2">
+                      <img src="./img/ft1.png" data-aos="zoom-in">
+                  </div>
+                  <div class="col-8" style="text-align: center;"><br><br><br>
+                    <div>
+                    <img id="shake" src="./img/logo.png" style="padding-left: 50px;"><br><br><br><br>
+                    </div>
+                    <div id="shake">
+                    <a class="menu" style="color: white;text-decoration:none;" class="nav-link" href="#" id="b">Home</a>&emsp;&emsp;
+                    <a class="menu" style="color: white;text-decoration:none;" class="nav-link" href="#" id="c">Games</a>&emsp;&emsp;
+                    <a class="menu" style="color: white;text-decoration:none;" class="nav-link" href="#" id="d">Reviews</a>&emsp;&emsp;
+                    <a class="menu" style="color: white;text-decoration:none;" class="nav-link" href="#" id="e">News</a>&emsp;&emsp;
+                    <a class="menu" style="color: white;text-decoration:none;" class="nav-link" href="#" id="f">Contact</a>&emsp;&emsp;<br><br>
+                    </div>
+                    <div id="shake" style="padding-left: 60px;">
+                    <i style="color: white; padding: 0.5rem;" class="fa fa-facebook"></i>&emsp;
+                    <i style="color: white;padding: 0.5rem;" class="fa fa-adjust"></i>&emsp;
+                    <i style="color: white;padding: 0.5rem;" class="fa fa-twitter"></i>&emsp;
+                    <i style="color: white;padding: 0.5rem;" class="fa fa-circle"></i>&emsp;
+                    <i style="color: white;padding: 0.5rem;" class="fa fa-behance"></i><br><br><br>
+                    </div>
+                    <h6 style="color: #a9a9a9;font-size: 10px;padding-left: 60px;">Copyright ©2020 All rights reserved | This template is made with  by Colorlib</h6>
+                  </div>
+                  <div class="col-2">
+                      <img src="./img/ft2.png" data-aos="zoom-in">
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+
+<!-- <div class="box x" data-aos="zoom-out-left"></div>
+<div class="box y" data-aos="flip-down"></div>
+<div class="box y" data-aos="zoom-in"></div> -->
+
+<script>
+AOS.init({
+    duration : 1500,
+});
+
+$('.btn').mouseleave(function(){
+    $(this).css('background-color','blueViolet')
+})
+$('.btn').mouseenter(function(){
+    $(this).css('background-color','DarkViolet')
+})
+
+$('.menu').mouseleave(function(){
+    $(this).css('color','white')
+})
+$('.menu').mouseenter(function(){
+    $(this).css('color','violet')
+})
+
+$('.fa').mouseleave(function(){
+    $(this).css('color','white')
+})
+$('.fa').mouseenter(function(){
+    $(this).css('color','violet')
+})
+</script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
